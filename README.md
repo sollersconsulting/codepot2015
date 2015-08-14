@@ -11,7 +11,7 @@ Node.js + npm packages
 
 ## IDE
 Preferably use one of these IDEs:
-- WebStorm
+- WebStorm (recommended)
 - Atom
 - Visual Studio
 
