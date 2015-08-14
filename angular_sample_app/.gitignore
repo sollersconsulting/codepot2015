@@ -1,0 +1,8 @@
+node_modules
+typings
+src/bower_components
+.tmp
+.idea
+.tscache
+npm-debug
+src/js
