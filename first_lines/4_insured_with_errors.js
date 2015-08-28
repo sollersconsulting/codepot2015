@@ -8,5 +8,7 @@ Insured.prototype.displaySummary = function(){
 
 var insured = new Insured("Mariusz");
 insured.premium = 300;
+//insured.permium = 300;
+//insured.premium = new Insured("Stefan");
 
 insured.displaySummary();

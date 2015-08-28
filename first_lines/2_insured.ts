@@ -4,17 +4,14 @@ class Insured {
    
   constructor(name) {
     this.name = name;
-  }
+  }i
   
   displaySummary(){
-    console.log("Total premium for " + this.name + " is " + this.premium);
+    alert("Total premium for " + this.name + " is " + this.premium);
   }
 
 }
 
 var insured = new Insured("Mariusz");
 insured.premium = 300;
-//insured.permium = 300;
-//insured.premium = new Insured("Stefan");
-
 insured.displaySummary();

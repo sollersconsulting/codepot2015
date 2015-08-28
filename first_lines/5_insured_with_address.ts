@@ -5,7 +5,7 @@ class Insured {
   constructor(private name: string) {}
   
   displaySummary(){
-    console.log("Total premium for " + this.name + " is " + this.premium + ", he's living in " + this.address.city);
+    alert("Total premium for " + this.name + " is " + this.premium + ", he's living in " + this.address.city);
   }
   
   moveTo(street: string, houseNo: string, flatNo: number, city: string) {

@@ -4,7 +4,7 @@ class Insured {
   constructor(private name: string) {}
   
   displaySummary(){
-    console.log("Total premium for " + this.name + " is " + this.premium);
+    alert("Total premium for " + this.name + " is " + this.premium);
   }
 
 }

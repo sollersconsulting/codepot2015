@@ -47,15 +47,15 @@ var addressReceivedFromWebService = {street: "ul. Marszalkowska", houseNo: "1a",
 var insured = new Insured("Someone");
 insured.premium = 300;
 insured.moveTo(addressReceivedFromWebService);
-console.log(insured.summary());
+alert(insured.summary());
 
 var mariusz = new Person("Mariusz", 50);
 mariusz.premium = 300;
 mariusz.moveTo(addressReceivedFromWebService);
-console.log(mariusz.summary());
+alert(mariusz.summary());
 
 var sollers = new Company("Sollers Consulting");
 sollers.NIP = 1132463039;
 sollers.premium = 300;
 sollers.moveTo({street: "ul. Wisniowa", houseNo: "40", flatNo: null, city: "Warsaw"});
-console.log(sollers.summary());
+alert(sollers.summary());
