@@ -1,0 +1,20 @@
+In this example a whole page is a text editor. It's made from some reusable directives.
+<hr/>
+
+<data-sc-editor data-editor-text="{{content}}" disabled>
+</data-sc-editor>
+
+<br/>
+
+<button
+    data-sc-button-for-field="content"
+    data-text-when-empty="ADD"
+    data-text-when-filled="EDIT"
+    data-ng-click="popupOpen=true">
+</button>
+
+<data-sc-popup data-trigger="popupOpen">
+  <data-sc-editor data-editor-text="{{content}}"></data-sc-editor>
+  <br/>
+  <button data-ng-click="vm.save(editorText)">Save</button>
+</data-sc-popup>

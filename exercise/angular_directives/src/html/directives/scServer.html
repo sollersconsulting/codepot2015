@@ -1,0 +1,10 @@
+<section>
+  <h2>Server</h2>
+  <div data-ng-repeat="client in clients">
+    <h3>Client {{$index+1}}: {{::client.name}}</h3>
+    <div>
+      Last received message: {{client.message}}
+    </div>
+  </div>
+  <data-sc-message-sender data-owner-name="{{::name}}"></data-sc-message-sender>
+</section>

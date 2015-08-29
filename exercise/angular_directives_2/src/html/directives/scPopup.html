@@ -1,0 +1,6 @@
+<section data-ng-show="trigger">
+  <button data-ng-click="trigger=false">&#10005;</button>
+  <!-- even that popup has an isolated scope, its content hasn't (child scope by transclude) -->
+  <div data-ng-transclude>
+  </div>
+</section>

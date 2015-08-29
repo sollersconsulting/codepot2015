@@ -1,0 +1,8 @@
+grunt
+node_modules
+src/bower_components
+.idea
+.tscache
+typings
+npm-debug
+src/withTS/js

@@ -1,0 +1,39 @@
+<form name="scTestForm">
+  <div data-ng-repeat="question in questions">
+    <hr/>
+    <h3 data-ng-class="{'sc-question-error' : question.empty && question.required}">
+      {{::question.content}}<span data-ng-if="question.empty && question.required"> - cannot be empty!</span>
+    </h3>
+    <table data-ng-if="question.multiselect">
+      <tbody>
+      <tr data-ng-repeat="answer in question.answers">
+        <td>
+          <input type="checkbox" id="cb-q-{{::$parent.$index}}-a-{{::$index}}"
+                 name="q-{{::$parent.$index}}-a-{{::$index}}" ng-model="answer.model"
+                 data-ng-true-value="'{{::answer.content}}'" data-ng-false-value="null"/>
+        </td>
+        <td><label for="cb-q-{{::$parent.$index}}-a-{{::$index}}">{{::answer.content}}</label></td>
+      </tr>
+      </tbody>
+    </table>
+    <table data-ng-if="!question.multiselect">
+      <tbody>
+      <tr data-ng-repeat="answer in question.answers">
+        <td>
+          <input type="radio" id="r-q-{{::$parent.$index}}-a-{{::$index}}" data-ng-value="::answer.content"
+                 name="q-{{::$parent.$index}}" ng-model="question.model"/>
+        </td>
+        <td><label for="r-q-{{::$parent.$index}}-a-{{::$index}}">{{::answer.content}}</label></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr/>
+  <button name="submit" data-ng-click="onSubmit(scTestForm)">CONVERT!</button>
+
+  <div data-ng-if="scTestForm.$valid && summary">
+    <h3>Result text:</h3>
+    <textarea cols="70">{{summary}}</textarea>
+  </div>
+</form>
