@@ -1,4 +1,4 @@
-<section data-ng-show="trigger">
+<section data-ng-class="{'sc-popup-active': trigger}" class="sc-popup sc-popup-transition">
   <button data-ng-click="trigger=false">&#10005;</button>
   <!-- even that popup has an isolated scope, its content hasn't (child scope by transclude) -->
   <div data-ng-transclude>
