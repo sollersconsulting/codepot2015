@@ -1,12 +1,17 @@
 In this example we have one "server" and many "clients" which depend on it.
 <hr/>
-
-<data-sc-server data-name="TurboServer"></data-sc-server>
-
 <button data-ng-click="vm.addNewClient()">
   Add new client
 </button>
+<section class="row">
 
-<div data-ng-repeat="clientName in clients">
-  <data-sc-client data-name="{{::clientName}}" data-server="TurboServer"></data-sc-client>
-</div>
+  <data-sc-server data-name="TurboServer" class="small-7 columns">
+  </data-sc-server>
+
+  <div class="small-5 columns">
+    <div data-ng-repeat="clientName in clients" class="row">
+      <data-sc-client data-name="{{::clientName}}" data-server="TurboServer" class="small-12 columns">
+      </data-sc-client>
+    </div>
+  </div>
+</section>
