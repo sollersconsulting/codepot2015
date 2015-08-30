@@ -28,7 +28,7 @@ module app.screens.test {
           content: "TDD"
         }]
       }, {
-        content: "Is this a good idea to take part in Codepo",
+        content: "Is this a good idea to take part in Codepot?",
         required: true,
         answers: [{
           content: "Yes"

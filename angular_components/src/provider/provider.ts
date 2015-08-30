@@ -25,6 +25,6 @@ module app.blocks {
     }
   }
 
-  angular.module("test")
-    .provider("app.blocks.ApiEndpoint", ApiEndpointProvider);
+  angular.module("app.blocks")
+    .provider("ApiEndpoint", ApiEndpointProvider);
 }

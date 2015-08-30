@@ -1,5 +1,5 @@
-angular.module("test")
-  .controller("app.layout.MenuController", MenuController);
+angular.module("app.layout")
+  .controller("MenuController", MenuController);
 
 "use strict";
 

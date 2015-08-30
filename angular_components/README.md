@@ -1,1 +1,1 @@
-# WARNING! This is just an example.
+# Examples of how to create angular definitions in TS.

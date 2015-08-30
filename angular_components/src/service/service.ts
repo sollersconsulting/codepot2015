@@ -25,6 +25,6 @@ module app.services {
     }
   }
 
-  angular.module("test")
-    .service("app.services.UserService", UserService);
+  angular.module("app.services")
+    .service("UserService", UserService);
 }

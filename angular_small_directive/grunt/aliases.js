@@ -5,11 +5,11 @@ module.exports = function (grunt, options) {
       "clean",
       "ts",
       "connect:withTS",
-      "watch:withTS"
+      "watch"
     ],
     pure: [
       "connect:pure",
-      "watch:pure"
+      "watch"
     ]
   };
 };

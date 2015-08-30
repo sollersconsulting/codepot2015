@@ -3,7 +3,7 @@ module app.layout {
 
   interface IMenuScope extends ng.IScope {
     fullName: string;
-    greetings: Function;
+    greetings: Function; // greetings: () => void; // greetings(): void;
   }
 
   class MenuController {
@@ -17,12 +17,11 @@ module app.layout {
     }
   }
 
-  angular.module("test")
-    .controller("app.layout.MenuController", MenuController);
+  angular.module("app.layout")
+    .controller("MenuController", MenuController);
 }
 
-// controller as vm
-
+// alternatively - controller as vm
 module app.layout {
   "use strict";
 
@@ -44,31 +43,6 @@ module app.layout {
     }
   }
 
-  angular.module("test")
-    .controller("app.layout.MenuController", MenuController);
-}
-
-module app.layout {
-  "use strict";
-
-  interface IMenuScope {
-    fullName: string;
-    greetings(): void;
-  }
-
-  class MenuController implements IMenuScope {
-    fullName: string;
-
-    constructor() {
-      var vm = this; // just for presentation
-      vm.fullName = "Superuser";
-    }
-
-    greetings(): void {
-      alert("Hello " + this.fullName);
-    }
-  }
-
-  angular.module("test")
-    .controller("app.layout.MenuController", MenuController);
+  angular.module("app.layout")
+    .controller("MenuController", MenuController);
 }

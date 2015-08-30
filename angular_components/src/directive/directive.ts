@@ -25,8 +25,8 @@ module app.directives {
     }
   }
 
-  // angular.module("test")
+  // angular.module("app.directives")
   // .directive("scTestConverter", (): ng.IDirective => new TestConverter());
-  angular.module("test")
+  angular.module("app.directives")
     .directive("scTestConverter", TestConverter.instance);
 }

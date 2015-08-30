@@ -1,4 +1,4 @@
-angular.module("test")
+angular.module("app.directives")
   .directive("scTestConverter", TestConverter);
 
 function TestConverter() {

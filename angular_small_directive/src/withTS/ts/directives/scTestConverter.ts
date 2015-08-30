@@ -6,8 +6,7 @@ module app.directives.testConverter {
   }
 
   interface IQuestion extends app.screens.test.IQuestion {
-    // TODO: odpaliæ z nowszym TSC? I wtedy string|string[]
-    model: string[];
+    model: any; // problems with string|string[]
     empty: boolean;
 
     // Override

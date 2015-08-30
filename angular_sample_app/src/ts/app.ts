@@ -1,3 +1,9 @@
+/// <reference path="../../typings/angularjs/angular.d.ts" />
+/// <reference path="../../typings/angularjs/angular-route.d.ts" />
+/// <reference path="../../typings/jquery/jquery.d.ts" />
+
+/// <reference path="controllers/helloController.ts" />
+
 "use strict";
 
 var routes: { [index: string]: ng.route.IRoute; } = {

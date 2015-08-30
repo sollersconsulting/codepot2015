@@ -6,6 +6,7 @@ module app.services {
 
   class SettingsService implements ISettingsService {
     constructor(private $http: ng.IHttpService) {
+      // sth with $http
     }
   }
 
@@ -14,10 +15,6 @@ module app.services {
     return new SettingsService($http);
   }
 
-  angular.module("test")
-    .factory("app.services.SettingsService", factory);
-
-  // alternative for emptry services
-  // angular.module("test")
-  //   .factory("app.services.SettingsService", (): ISettingsService => new SettingsService());
+  angular.module("app.services")
+    .factory("SettingsService", factory);
 }

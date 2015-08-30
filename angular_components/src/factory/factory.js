@@ -1,5 +1,5 @@
-angular.module("test")
-  .factory("app.services.SettingsService", factory);
+angular.module("app.services")
+  .factory("SettingsService", factory);
 
 factory.$inject = ["$http"];
 function factory($http) {
